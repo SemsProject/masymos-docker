@@ -1,0 +1,15 @@
+[submodule "src/masymos-core"]
+	path = src/masymos-core
+	url = git@github.com:SemsProject/masymos-core.git
+[submodule "src/masymos-cli"]
+	path = src/masymos-cli
+	url = git@github.com:SemsProject/masymos-cli.git
+[submodule "src/masymos-morre"]
+	path = src/masymos-morre
+	url = git@github.com:SemsProject/masymos-morre.git
+[submodule "src/masymos-diff"]
+	path = src/masymos-diff
+	url = git@github.com:FreakyBytes/masymos-diff.git
+[submodule "src/masymos-diff-rest"]
+	path = src/masymos-diff-rest
+	url = git@github.com:FreakyBytes/masymos-diff-rest.git
