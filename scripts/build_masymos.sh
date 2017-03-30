@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Build script for MaSyMoS
 # based on the Makefile from Martin Peters
