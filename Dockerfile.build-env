@@ -1,0 +1,11 @@
+FROM maven:3.3-jdk-8
+MAINTAINER Martin Peters
+
+WORKINGDIR /root/
+VOLUME /root/.m2/repository
+
+# directory containing all the source code folders
+ENV SRC_DIR "/root/src"
+ADD scripts/build_masymos.sh build_masymos.sh
+
+CMD "build_masymos.sh"
