@@ -13,3 +13,6 @@
 [submodule "src/masymos-diff-rest"]
 	path = src/masymos-diff-rest
 	url = git@github.com:FreakyBytes/masymos-diff-rest.git
+[submodule "owl/COMODI"]
+	path = owl/COMODI
+	url = https://github.com/binfalse/COMODI.git
