@@ -1,0 +1,4 @@
+74a75,77
+> 
+> # Enable remote debugging
+> dbms.jvm.additional=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005

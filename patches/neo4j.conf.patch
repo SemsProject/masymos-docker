@@ -1,0 +1,13 @@
+20c20
+< #dbms.security.auth_enabled=false
+---
+> dbms.security.auth_enabled=false
+67c67
+< #dbms.logs.http.enabled=true
+---
+> dbms.logs.http.enabled=true
+121a122,125
+> dbms.unmanaged_extension_classes=de.unirostock.morre.server.plugin=/morre,de.unirostock.sems.masymos.diff.webservice=/diff
+> 
+> # APOC stuff
+> apoc.export.file.enabled=true
