@@ -10,6 +10,6 @@ docker build -f Dockerfile.build-env -t masymos-build-env:latest .
 docker run --rm -t -v $(pwd)/src/:/root/src/ -e "SRC_DIR=/root/src"  masymos-build-env:latest
 
 # build the actual masymos container
-#docker build -f Dockerfile -t freakybytes/masymos:latest .
+docker build -f Dockerfile -t freakybytes/masymos:latest .
 
 
