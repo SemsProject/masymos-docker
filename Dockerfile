@@ -1,6 +1,9 @@
 FROM neo4j:3.0.3
 MAINTAINER Martin Peters
 
+# install patch command
+RUN apt-get update && apt-get install -y --no-install-recommends patch
+
 # create directories
 RUN (test -d /var/lib/neo4j/lib/masymos || mkdir -p /var/lib/neo4j/lib/masymos) ; \
     (test -d /var/owl || mkdir -p /var/owl) 
@@ -12,7 +15,7 @@ COPY src/masymos-diff-rest/target/lib/*.jar lib/masymos/
 RUN chmod +x /var/lib/neo4j/lib/masymos/*.jar
 
 # copy REST interface plugins
-COPY src/masymos-morre/target/masymos-morre-*.jar src/masymos-diff-rest/masymos-diff-ws-*.jar plugins/
+COPY src/masymos-morre/target/masymos-morre-*.jar src/masymos-diff-rest/target/masymos-diff-ws-*.jar plugins/
 
 # copy the masymos-cli fat jar
 COPY src/masymos-cli/target/masymos-cli-*.jar ./
