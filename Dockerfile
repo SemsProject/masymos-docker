@@ -12,10 +12,11 @@ RUN (test -d /var/lib/neo4j/lib/masymos || mkdir -p /var/lib/neo4j/lib/masymos) 
 # The dependency export from diff-rest is used here, because it also includes all
 # dependencies from e.g. masymos-core
 COPY src/masymos-diff-rest/target/lib/*.jar lib/masymos/
-RUN chmod +x /var/lib/neo4j/lib/masymos/*.jar
+RUN chmod +x lib/masymos/*.jar
 
 # copy REST interface plugins
 COPY src/masymos-morre/target/masymos-morre-*.jar src/masymos-diff-rest/target/masymos-diff-ws-*.jar plugins/
+RUN chmod +x plugins/*.jar
 
 # copy the masymos-cli fat jar
 COPY src/masymos-cli/target/masymos-cli-*.jar ./

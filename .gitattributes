@@ -1,4 +1,4 @@
+owl/SBO/SBO_OWL.owl filter=lfs diff=lfs merge=lfs -text
 owl/ChEBI/chebi_core.owl filter=lfs diff=lfs merge=lfs -text
 owl/GO/go.owl filter=lfs diff=lfs merge=lfs -text
 owl/KiSAO/kisao.owl filter=lfs diff=lfs merge=lfs -text
-owl/SBO/SBO_OWL.owl filter=lfs diff=lfs merge=lfs -text
