@@ -40,7 +40,7 @@ The first one contains a build environment (`Dockerfile.build-env`) and the actu
 implies, that the image is unsuitable for automated builds on Docker Hub. However to simplify building the image, we're shipping a bash script
 automating the steps.
 
-Before cloning this repository please ensure, that you have [Git LFS](https://git-lfs.github.com/) installed, since we use it to store the ontology files in this repository.
+Before cloning this repository **please ensure, that you have [Git LFS](https://git-lfs.github.com/) installed**, since we use it to store the ontology files in this repository.
 Then clone the repository with all sub-modules:
 
 ```sh
