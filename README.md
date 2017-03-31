@@ -1,7 +1,7 @@
 MaSyMoS Docker Image
 ====================
 
-This git repository contains all scripts and links to resources for building a fully featured MaSyMoS Docker image.
+This [git repository](https://github.com/SemsProject/masymos-docker) contains all scripts and links to resources for building a fully featured MaSyMoS Docker image.
 [MaSyMoS](https://sems.uni-rostock.de/projects/masymos/) is a graph database for SystemsBiology models, developed within the [SEMS Project](https://sems.uni-rostock.de/) ([Repoistories](https://semsproject.github.io)).
 
 This image includes following MaSyMoS modules:
